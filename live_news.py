@@ -12,7 +12,7 @@ from datetime import timedelta
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
 #driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
-
+# changes
 # def check_candidate_name(line):
 #     candidate_names = pd.read_excel(r"/root/Desktop/Team Python Deployment/Gopi Projects/DH_RPA_Validations/DHS_RPA_Validations/online_news/Candidate List.xlsx",sheet_name='Sheet1')
 #     for i in candidate_names['WINNER CANDIDATE']:
