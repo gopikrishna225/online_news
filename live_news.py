@@ -13,12 +13,12 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
 #driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 
-def check_candidate_name(line):
-    candidate_names = pd.read_excel(r"/root/Desktop/Team Python Deployment/Gopi Projects/DH_RPA_Validations/DHS_RPA_Validations/online_news/Candidate List.xlsx",sheet_name='Sheet1')
-    for i in candidate_names['WINNER CANDIDATE']:
-        if re.search('\b{}\b'.format(i.lower()),line.lower()):
-            return True
-            break
+# def check_candidate_name(line):
+#     candidate_names = pd.read_excel(r"/root/Desktop/Team Python Deployment/Gopi Projects/DH_RPA_Validations/DHS_RPA_Validations/online_news/Candidate List.xlsx",sheet_name='Sheet1')
+#     for i in candidate_names['WINNER CANDIDATE']:
+#         if re.search('\b{}\b'.format(i.lower()),line.lower()):
+#             return True
+#             break
 def update_data(data1):
 
     con = cx_Oracle.connect("DR1024230/Pipl#mdrm$230@172.16.1.61:1521/DR101413")
